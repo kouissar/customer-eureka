@@ -8,6 +8,7 @@ pipeline {
             withMaven(maven : 'apache-maven-3.8.6') {
                 echo 'Building..'
                 sh 'mvn clean compile'
+                {
             }
         }
         stage('Test') {
